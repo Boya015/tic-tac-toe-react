@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { Title, Subtitle } from "../../../styles/General.styled";
-import { ModalHeader, ModalBody, ModalFooter } from "../Modal.styled";
+import { Subtitle, Title } from "../../../styles/General.styled";
+import { ModalBody, ModalFooter, ModalHeader } from "../Modal.styled";
 import Button from "../../Button/Button";
-import { GameContext } from "../../../contexts/GameContext";
 import { ModalContext } from "../../../contexts/ModalContext";
+import { GameContext } from "../../../contexts/GameContext";
 import { SfxContext } from "../../../contexts/SfxContext";
 import { useNavigate } from "react-router-dom";
 

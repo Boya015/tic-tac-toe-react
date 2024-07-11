@@ -2,14 +2,11 @@ import React, { useContext } from "react";
 import { CellStyle } from "./Game.styled";
 import { GameContext } from "../../contexts/GameContext";
 import { ModalContext } from "../../contexts/ModalContext";
-import RoundOverModal from "../Modal/RoundOverModal/RoundOverModal/RoundOverModal";
-// ../Modal/RoundOverModal/RoundOverModal"
-import { checkForWinner } from "../../utils/utils/GameUtils/index";
-// "../../utils/GameUtils"
-
+import RoundOverModal from "../Modal/RoundOverModal/RoundOverModal";
+import { checkForWinner } from "../../utils/GameUtils/index";
 import { ReactComponent as IconX } from "../../assets/svg/icon-x.svg";
 import { ReactComponent as XIconOutline } from "../../assets/svg/icon-x-outline.svg";
-import { ReactComponent as IconO } from "../../assets/svgs/icon-o.svg";
+import { ReactComponent as IconO } from "../../assets/svg/icon-o.svg";
 import { ReactComponent as OIconOutline } from "../../assets/svg/icon-o-outline.svg";
 import { SfxContext } from "../../contexts/SfxContext";
 
