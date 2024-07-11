@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Details = () => {
+function Details() {
   return (
-    <div>
-      
-    </div>
+    <div>Details</div>
   )
 }
 

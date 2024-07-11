@@ -1,5 +1,3 @@
-import { purple, red } from "@material-ui/core/colors";
-
 export const lightTheme = {
   colors: {
     primary: "#F6F1EB",
@@ -15,6 +13,7 @@ export const lightTheme = {
     black: "#00000099",
     purple: "#8437f9",
     yellow: "#f9c811",
+    cream: "#888888",
 
     text: "#202124",
   },
@@ -31,7 +30,7 @@ export const lightTheme = {
     },
   },
   media: {
-    mobile: "@media (max-width: 100px)",
+    mobile: "@media (max-width: 1000px)",
   },
 };
 
@@ -39,7 +38,7 @@ export const darkTheme = {
   colors: {
     primary: "#202124",
     secondary: "#F6F1EB",
-    tertiary: "ACA8A4",
+    tertiary: "#ACA8A4",
 
     default: "#BCC1C7",
 
@@ -48,8 +47,9 @@ export const darkTheme = {
     gray: "#828282",
     white: "#FFfFf0",
     black: "#00000099",
-    purple: "#8437fg",
+    purple: "#8437f9",
     yellow: "#f9c811",
+    cream: "#888888",
 
     text: "#F6F1EB",
   },

@@ -16,13 +16,13 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const LightmodeIcon = styled(MdOutlineLightbulb)`
+export const LightModeIcon = styled(MdOutlineLightbulb)`
   color: ${(props) => props.theme.colors.text};
   font-size: 2rem;
   cursor: pointer;
 `;
 
-export const DarkmodeIcon = styled(MdDarkMode)`
+export const DarkModeIcon = styled(MdDarkMode)`
   color: ${(props) => props.theme.colors.text};
   font-size: 2rem;
   cursor: pointer;

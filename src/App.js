@@ -1,21 +1,23 @@
+import { useContext } from "react";
 import Router from "./Router";
 import { GlobalStyles } from "./styles/Global.styled";
-import { ThemeProvider } from "styled-components;";
+import { ThemeContextProvider } from "./contexts/ThemeContext"; // Corrected import
 import { lightTheme, darkTheme } from "./styles/theme";
 import { ThemeContext } from "./contexts/ThemeContext";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 
-const App = () => {
-  const {theme} = useContext(ThemeContext)
+function App() {
+  const { theme } = useContext(ThemeContext);
+  const mode = theme === "light" ? lightTheme : darkTheme;
 
-
-  const mode = (theme === "light" ? lighttheme : darkTheme);
-  
-  
   return (
-    <ThemeProvider theme={mode}>
-      <GlobalStyles />
-      <Router />
-    </ThemeProvider>
+    <ThemeContextProvider> {/* Corrected usage */}
+      <ThemeProvider theme={mode}>
+        <GlobalStyles />
+        <Router />
+        <MusicPlayer />
+      </ThemeProvider>
+    </ThemeContextProvider>
   );
 }
 
