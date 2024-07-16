@@ -11,7 +11,7 @@ function Game() {
     <Container>
       <Player
         player={game.player1}
-        isplayeractive={game.player1.choice === game.turn}
+        isPlayerActive={game.player1.choice === game.turn}
       />
       <GameBoardStyle>
         {game.board.map((item, index) => (
@@ -20,7 +20,7 @@ function Game() {
       </GameBoardStyle>
       <Player
         player={game.player2}
-        isplayeractive={game.player2.choice === game.turn}
+        isPlayerActive={game.player2.choice === game.turn}
       />
     </Container>
   );
