@@ -16,12 +16,14 @@ export const CellStyle = styled.button`
       path {
         fill: ${(props) => props.theme.colors.primary};
       }
+      margin: -15px;
   }
   .outlineIcon {
     path {
       stroke: ${(props) => props.theme.colors.primary};
       stroke-width: 0;
-    }
+      }
+      margin: -15px;
   }
 
   &:hover {

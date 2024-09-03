@@ -4,10 +4,10 @@ import { GameContext } from "../../contexts/GameContext";
 import { ModalContext } from "../../contexts/ModalContext";
 import RoundOverModal from "../Modal/RoundOverModal/RoundOverModal";
 import { checkForWinner } from "../../utils/GameUtils/index";
-import { ReactComponent as IconX } from "../../assets/svg/icons8-x.svg";
-import { ReactComponent as XIconOutline } from "../../assets/svg/icons8-x-outline.svg";
-import { ReactComponent as IconO } from "../../assets/svg/icons8-o.svg";
-import { ReactComponent as OIconOutline } from "../../assets/svg/icons8-o-outline.svg";
+import { ReactComponent as IconX } from "../../assets/svg/icon-x-filled.svg";
+import { ReactComponent as XIconOutline } from "../../assets/svg/icon-x-outlined.svg";
+import { ReactComponent as IconO } from "../../assets/svg/icon-o-filled.svg";
+import { ReactComponent as OIconOutline } from "../../assets/svg/icon-o-outlined.svg";
 import { SfxContext } from "../../contexts/SfxContext";
 
 function GameCell({ cellItem, index, isWinningCell }) {
