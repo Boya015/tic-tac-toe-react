@@ -4,7 +4,7 @@ import { useState, createContext } from "react";
 export const ThemeContext = createContext({});
 
 export function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -15,4 +15,4 @@ export function ThemeContextProvider({ children }) {
       {children}
     </ThemeContext.Provider>
   );
-}
+};

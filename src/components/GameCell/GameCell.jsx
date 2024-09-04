@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { CellStyle } from "./Game.styled";
+import { CellStyle } from "./GameCell.styled";
 import { GameContext } from "../../contexts/GameContext";
 import { ModalContext } from "../../contexts/ModalContext";
 import RoundOverModal from "../Modal/RoundOverModal/RoundOverModal";

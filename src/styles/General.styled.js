@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: ${(props) => (props.columnbased ? "column" : "row")};
+  flex-direction: ${(props) => (props.columnBased ? "column" : "row")};
   height: 80vh;
   width: 100vw;
   background-color: ${(props) => props.theme.colors.primary};

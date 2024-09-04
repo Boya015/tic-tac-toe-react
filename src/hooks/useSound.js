@@ -18,7 +18,7 @@ const useSound = (url, options) => {
     setTimeout(() => {
       sound.pause();
       sound.currentTime = 0;
-    }, options.timeout);
+    }, options.timeout)
   };
 };
 

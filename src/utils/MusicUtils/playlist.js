@@ -1,4 +1,4 @@
-const playList = [
+const PlayList = [
     "https://jetsetradio.live/radio/stations/lofi/90sFlav - Balmy.mp3",
     "https://jetsetradio.live/radio/stations/lofi/90sFlav - Call Me.mp3",
     "https://jetsetradio.live/radio/stations/lofi/Adam Kay - Rehab (Instrumental).mp3",
@@ -186,7 +186,7 @@ const playList = [
     "https://jetsetradio.live/radio/stations/lofi/Zeeky Beats - Follow Her.mp3",
     "https://jetsetradio.live/radio/stations/lofi/Zeeky Beats - Fresh Air.mp3",
     "https://jetsetradio.live/radio/stations/lofi/Zeeky Beats - Gone For Now.mp3",
-    "https://jetsetradio.live/radio/stations/lofi/Zeeky Beats - Missed Calls.mp3",
+    "https://jetsetradio.live/radio/stations/lofi/Zeeky Beats - Missed Calls.mp3"
   ];
   
-  export default playList;
+  export default PlayList;

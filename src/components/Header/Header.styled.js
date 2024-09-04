@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MdDarkMode, MdOutlineLightbulb } from "react-icons/md";
+import {  MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -16,13 +16,13 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const LightModeIcon = styled(MdOutlineLightbulb)`
+export const LightModeIcon = styled(MdOutlineLightMode)`
   color: ${(props) => props.theme.colors.text};
   font-size: 2rem;
   cursor: pointer;
 `;
 
-export const DarkModeIcon = styled(MdDarkMode)`
+export const DarkModeIcon = styled(MdOutlineDarkMode)`
   color: ${(props) => props.theme.colors.text};
   font-size: 2rem;
   cursor: pointer;

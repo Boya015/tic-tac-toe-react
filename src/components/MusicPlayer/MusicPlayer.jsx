@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { MusicPlayerWrapper } from "./MusicPlayer.styled";
-import playList from "../../utils/MusicUtils/playlist";
+import PlayList from "../../utils/MusicUtils/playlist";
 import { randomizeIndex } from "../../utils/MusicUtils";
 import { PlayIcon, PauseIcon, NextIcon } from "./MusicPlayer.styled";
 import { SfxContext } from "../../contexts/SfxContext";
@@ -9,7 +9,7 @@ import { Text } from "../../styles/General.styled";
 function MusicPlayer() {
   const { hoverSfx, clickSfx } = useContext(SfxContext);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentSong, setCurrentSong] = useState(randomizeIndex(playList));
+  const [currentSong, setCurrentSong] = useState(randomizeIndex(PlayList));
   const [playPromise, setPlayPromise] = useState(null);
   const playerRef = useRef(null);
 
@@ -24,17 +24,18 @@ function MusicPlayer() {
   }, [isPlaying, currentSong]);
 
   const shuffleHandler = async () => {
- 
-    await playPromise?.then(() => {
-      playerRef.current?.pause();
+    clickSfx()
+    setIsPlaying(false)
+    await playPromise.then(() => {
+      playerRef.current.pause();
       setIsPlaying(false);
     });
 
-    setCurrentSong(randomizeIndex(playList));
+    setCurrentSong(randomizeIndex(PlayList));
     setIsPlaying(true);
   };
 
-  const displaySong = playList[currentSong].split("/")[6] || playList[currentSong];
+  const displaySong = PlayList[currentSong].split("/")[4] || PlayList[currentSong];
   return (
     <MusicPlayerWrapper>
       {isPlaying ? (
@@ -59,7 +60,7 @@ function MusicPlayer() {
 
       <audio
         ref={playerRef}
-        src={playList[currentSong]}
+        src={PlayList[currentSong]}
         onEnded={shuffleHandler}
       />
       <Text>{displaySong}</Text>

@@ -8,10 +8,10 @@ export const GlobalStyles = createGlobalStyle`
         font-family: "Poppins", sans-serif;
         ${(props) => props.theme.media.mobile} {
             font-size: 11px;
-        }
+        };
     }
 
     body {
-        background-color: ${props => props.theme.colors.primary};
+        background-color: ${(props) => props.theme.colors.primary};
     }
 `

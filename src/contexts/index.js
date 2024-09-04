@@ -7,7 +7,7 @@ function Provider({ children }) {
   return (
     <ThemeContextProvider>
       <GameContextProvider>
-        <SfxContextProvider>{children}</SfxContextProvider>˝
+        <SfxContextProvider>{children}</SfxContextProvider>
       </GameContextProvider>
     </ThemeContextProvider>
   );
