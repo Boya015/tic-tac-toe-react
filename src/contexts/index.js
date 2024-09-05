@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeContextProvider } from "./ThemeContext";
 import { GameContextProvider } from "./GameContext";
-import { SfxContextProvider } from "./SfxContext";
+import { SfxContextProvider } from "./SfxContexts";
 
 function Provider({ children }) {
   return (

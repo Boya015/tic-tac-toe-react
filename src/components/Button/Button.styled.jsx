@@ -12,7 +12,7 @@ export const ButtonWrapper = styled.button`
   font-weight: 400;
 
   &:hover {
-      box-shadow: 0px 0px 10px ${(props) => props.theme.colors.purple};;
+      box-shadow: 0px 0px 10px ${(props) => props.theme.colors.purple};
       cursor: pointer;
   }
 

@@ -4,13 +4,15 @@ import ModalTemplate from "../components/Modal/ModalTemplate";
 
 export const ModalContext = createContext({});
 
-export function ModalContextProvider({ children }) {
-  const { modal, modalContent, handleModal } = useModal();
+export const ModalContextProvider = ({ children }) => {
+  
+  const {modal, modalContent, handleModal} = useModal();
 
+ 
   return (
-    <ModalContext.Provider value={{ modal, modalContent, handleModal }}>
-      <ModalTemplate />
+    <ModalContext.Provider value={{ modal, handleModal, modalContent }}>
+      <ModalTemplate/>
       {children}
     </ModalContext.Provider>
   );
-}
+};

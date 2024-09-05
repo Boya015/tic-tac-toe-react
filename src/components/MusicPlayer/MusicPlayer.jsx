@@ -3,7 +3,7 @@ import { MusicPlayerWrapper } from "./MusicPlayer.styled";
 import PlayList from "../../utils/MusicUtils/playlist";
 import { randomizeIndex } from "../../utils/MusicUtils";
 import { PlayIcon, PauseIcon, NextIcon } from "./MusicPlayer.styled";
-import { SfxContext } from "../../contexts/SfxContext";
+import { SfxContext } from "../../contexts/SfxContexts";
 import { Text } from "../../styles/General.styled";
 
 function MusicPlayer() {
@@ -17,7 +17,8 @@ function MusicPlayer() {
     if (isPlaying) {
       const promise = playerRef.current?.play();
       setPlayPromise(promise);
-      if (playerRef.current?.volume) playerRef.current.volume = 0.1;
+      if (playerRef.current?.volume) 
+        playerRef.current.volume = 0.1;
       return;
     }
     playerRef.current?.pause();
@@ -43,17 +44,14 @@ function MusicPlayer() {
           onClick={() => {
             clickSfx();
             setIsPlaying(false);
-          }}
-          onMouseEnter={() => hoverSfx()}
-        />
+          }} onMouseEnter={() => hoverSfx()} />
       ) : (
         <PlayIcon
           onClick={() => {
             clickSfx();
             setIsPlaying(true);
           }}
-          onMouseEnter={() => hoverSfx()}
-        />
+          onMouseEnter={() => hoverSfx()} />
       )}
 
       <NextIcon onClick={shuffleHandler} onMouseEnter={() => hoverSfx()} />
@@ -62,7 +60,7 @@ function MusicPlayer() {
         ref={playerRef}
         src={PlayList[currentSong]}
         onEnded={shuffleHandler}
-      />
+      ></audio>
       <Text>{displaySong}</Text>
     </MusicPlayerWrapper>
   );

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
-import { ModalContext } from "../../contexts/ModalContext";
+import { ModalContext } from "../../contexts/modalContext";
 import { ModalBackdrop, ModalContainer } from "./Modal.styled";
 
 function ModalTemplate() {
@@ -8,7 +8,9 @@ function ModalTemplate() {
   if (modal) {
     return ReactDOM.createPortal(
       <ModalBackdrop>
-        <ModalContainer>{modalContent}</ModalContainer>
+        <ModalContainer>
+        {modalContent}
+        </ModalContainer>
       </ModalBackdrop>,
       document.getElementById("modal-root")
     );

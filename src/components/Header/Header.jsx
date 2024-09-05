@@ -3,7 +3,7 @@ import { ThemeContext } from '../../contexts/ThemeContext'
 import { HeaderWrapper,LightModeIcon, DarkModeIcon } from './Header.styled';
 import { ReactComponent as Logo } from '../../assets/svg/tic-tac-toe.svg';
 import { useNavigate } from 'react-router-dom';
-import { SfxContext } from '../../contexts/SfxContext';
+import { SfxContext } from '../../contexts/SfxContexts';
 
 const Header = () => {
   const navigate = useNavigate();
