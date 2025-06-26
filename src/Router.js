@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Game from "./pages/Game/Game";
 import Details from "./pages/Details/Details";
 import Header from "./components/Header/Header";
-import { ModalContextProvider } from "./contexts/modalContext";
+import { ModalContextProvider } from "./contexts/modalContext.js";
 
 function Router() {
   return (
